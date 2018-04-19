@@ -20,7 +20,7 @@ import br.com.franca.models.TipoPreco;
 import br.com.franca.validation.ProdutoValidation;
 
 @Controller
-@RequestMapping("produtos")
+@RequestMapping("/produtos")
 public class ProdutosController {
 	@Autowired
 	private ProdutoDAO produtoDao;
