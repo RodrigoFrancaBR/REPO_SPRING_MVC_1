@@ -79,4 +79,13 @@ public class Produto {
 		this.precos = precos;
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+
 }
