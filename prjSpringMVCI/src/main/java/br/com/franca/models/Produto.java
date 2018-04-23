@@ -1,5 +1,6 @@
 package br.com.franca.models;
 
+import java.math.BigDecimal;
 import java.util.Calendar;
 import java.util.List;
 
@@ -108,8 +109,9 @@ public class Produto {
 			return false;
 		return true;
 	}
-	
-	
-	
+
+	public BigDecimal precoPara(TipoPreco tipoPreco) {
+		return precos.stream().filter(preco -> preco.getTipo().equals(tipoPreco)).findFirst().get().getValor();
+	}
 
 }
