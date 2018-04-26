@@ -71,18 +71,18 @@ public class ProdutosController {
 		binder.addValidators(new ProdutoValidation());
 	}
 
-/*	@RequestMapping("/detalhe/{id}")
+	@RequestMapping("/detalhe/{id}")
 	public ModelAndView detalhe(@PathVariable("id") Integer id) {
 		ModelAndView modelAndView = new ModelAndView("/produtos/detalhe");
 		Produto produto = produtoDao.find(id);
 		modelAndView.addObject("produto", produto);
 		return modelAndView;
 	}
-*/
-	@RequestMapping("/detalhe/{id}")
+
+	/*@RequestMapping("/detalhe/{id}")
 	@ResponseBody
 	public Produto detalheJason(@PathVariable("id") Integer id) {
 		return produtoDao.find(id);
-	}
+	}*/
 
 }
